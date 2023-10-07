@@ -9,8 +9,14 @@ public partial class BaseTracker : ContentView
         get => (string)GetValue(BaseTracker.CardTitleProperty);
         set => SetValue(BaseTracker.CardTitleProperty, value);
     }
+
+    public void OnButtonClicked(object sender, EventArgs args) 
+    {
+        CardTitle = "Clicked";
+    }
+
     public BaseTracker()
 	{
-		InitializeComponent();
+        InitializeComponent();
 	}
 }

@@ -12,15 +12,17 @@
             
             <Button
                 Grid.Column="0"
-                Text="{Binding CardTitle}"
+                Text="{Binding TrackerName}"
                 BackgroundColor="Transparent"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked"/>
             <ImageButton
                 Grid.Column="1"
                 Source="dotnet_bot.png"
                 WidthRequest="100"
                 Margin="10"
-                HorizontalOptions="End"/>
+                HorizontalOptions="End"
+                Clicked="OnButtonClicked"/>
         </Grid>
     </Border>
 </ContentView>
