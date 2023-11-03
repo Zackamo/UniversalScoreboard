@@ -54,11 +54,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Model\" />
+	  <Compile Update="View\TrackerMenuCardView.xaml.cs">
+	    <DependentUpon>TrackerMenuCardView.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="View\BaseTracker.xaml">
+	  <MauiXaml Update="View\TrackerMenuCardView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

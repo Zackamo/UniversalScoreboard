@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:cards="clr-namespace:UniversalScoreboard.View"
+             xmlns:view="clr-namespace:UniversalScoreboard.View"
+             xmlns:viewmodel="clr-namespace:UniversalScoreboard.ViewModel"
              x:Class="UniversalScoreboard.MainPage">
 
     <ScrollView>
@@ -29,7 +30,7 @@
                     <Label HorizontalOptions="End"/>
                 </Grid>
             </Border>
-            <cards:BaseTracker
+            <view:TrackerMenuCardView(viewmodel:TrackerMenuCardViewModel)
                 Grid.Row="4"/>
         </Grid>
     </ScrollView>
